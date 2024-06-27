@@ -10,7 +10,6 @@ import { Toaster } from "react-hot-toast";
 const App = lazy(() => import("./App.jsx"));
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  // <React.StrictMode>
   <BrowserRouter>
     <Provider store={store}>
       <Suspense>
@@ -27,5 +26,4 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       </Suspense>
     </Provider>
   </BrowserRouter>
-  // </React.StrictMode>
 );
